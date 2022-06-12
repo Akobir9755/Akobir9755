@@ -59,9 +59,6 @@ def ten(update: Update, context: CallbackContext) -> 1:
 def nine(update: Update, context: CallbackContext) -> 1:
     update.message.reply_text('9️⃣',),
 
-def school(update: Update, context: CallbackContext) -> 1:
-    update.message.reply_text('🏫',),
-
 def human(update: Update, context: CallbackContext) -> 1:
     update.message.reply_text('🧑',),
 
@@ -139,7 +136,7 @@ def computer(update: Update, context: CallbackContext) -> 1:
 def help(update: Update, context: CallbackContext) -> 1:
     update.message.reply_text('Sizda xatolar kuzatilgan bo`lsa uzur so`raymiz murojan uchun @Akobir9755 ga murojat qiling',),
 
-updater = Updater('')#sizning API ingizni yozasiz
+updater = Updater('')#Bu yerga sizning API ingizni yozasiz
 
 updater.dispatcher.add_handler(CommandHandler('start', hello))
 updater.dispatcher.add_handler(CommandHandler('hi', hi))
